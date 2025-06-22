@@ -6,7 +6,7 @@ export const getExistingUser = async (id: string) => {
     try {
         const { documents, total } = await database.listDocuments(
             appwriteConfig.databaseId,
-            appwriteConfig.userCollectionId,
+            appwriteConfig.usersCollectionId,
             [Query.equal("accountId", id)]
         );
         return total > 0 ? documents[0] : null;
@@ -28,7 +28,7 @@ export const storeUserData = async () => {
 
         const createdUser = await database.createDocument(
             appwriteConfig.databaseId,
-            appwriteConfig.userCollectionId,
+            appwriteConfig.usersCollectionId,
             ID.unique(),
             {
                 accountId: user.$id,
@@ -45,7 +45,7 @@ export const storeUserData = async () => {
     }
 };
 
-const getGooglePicture = async (accessToken: string) => {
+export const getGooglePicture = async (accessToken: string) => {
     try {
         const response = await fetch(
             "https://people.googleapis.com/v1/people/me?personFields=photos",
@@ -88,7 +88,7 @@ export const getUser = async () => {
 
         const { documents } = await database.listDocuments(
             appwriteConfig.databaseId,
-            appwriteConfig.userCollectionId,
+            appwriteConfig.usersCollectionId,
             [
                 Query.equal("accountId", user.$id),
                 Query.select(["name", "email", "imageUrl", "joinedAt", "accountId"]),
