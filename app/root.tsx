@@ -23,9 +23,8 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-// import {registerLicense} from "@syncfusion/ej2-react-charts";
 import { registerLicense } from "@syncfusion/ej2-base";
-registerLicense(import.meta.env.VITE_EJS_LICENSE_KEY as string);
+registerLicense(import.meta.env.VITE_EJS_LICENSE_KEY);
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
