@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddefd799-0aa5-4967-ba0f-474e151ba0e7" name="Changes" comment="" />
+    <list default="true" id="ddefd799-0aa5-4967-ba0f-474e151ba0e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/NavItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Components/NavItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/appwrite/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/appwrite/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/appwrite/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/appwrite/client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/admin/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/admin/dashboard.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/.gitignore" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -69,7 +76,11 @@
       <workItem from="1750459126902" duration="5484000" />
       <workItem from="1750469193079" duration="2421000" />
       <workItem from="1750508094964" duration="31862000" />
-      <workItem from="1750609433382" duration="9444000" />
+      <workItem from="1750609433382" duration="9921000" />
+      <workItem from="1750620367616" duration="4960000" />
+      <workItem from="1750625396032" duration="635000" />
+      <workItem from="1750626712898" duration="866000" />
+      <workItem from="1750627723846" duration="2396000" />
     </task>
     <servers />
   </component>
