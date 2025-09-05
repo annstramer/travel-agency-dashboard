@@ -76,6 +76,7 @@ export const interests = [
   "Hiking & Nature Walks",
   "Beaches & Water Activities",
   "Museums & Art",
+  "Music & Dance",
   "Nightlife & Bars",
   "Photography Spots",
   "Shopping",

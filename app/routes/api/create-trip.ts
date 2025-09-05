@@ -88,7 +88,6 @@ export const action = async ({ request }: ActionFunctionArgs) => {
                     createdAt: new Date().toISOString(),
                     imageUrls,
                     userId,
-
                 }
         );
 

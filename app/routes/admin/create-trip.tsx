@@ -52,13 +52,14 @@ const CreateTrip = ({ loaderData }: Route.ComponentProps ) => {
             setError('Please provide values for all fields');
             setLoading(false)
             return;
-        }
+        } else setError('');
 
         if(formData.duration < 1 || formData.duration > 10) {
             setError('Duration must be between 1 and 10 days');
             setLoading(false)
             return;
-        }
+        }  else setError('');
+
         const user = await account.get();
         if(!user.$id) {
             console.error('User not authenticated');
@@ -67,9 +68,6 @@ const CreateTrip = ({ loaderData }: Route.ComponentProps ) => {
         }
 
         try {
-            console.log('user', user);
-            console.log('formData', formData);
-
             const response = await fetch('/api/create-trip', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
@@ -80,7 +78,7 @@ const CreateTrip = ({ loaderData }: Route.ComponentProps ) => {
                     interests: formData.interest,
                     budget: formData.budget,
                     groupType: formData.groupType,
-                    userId: user.$id
+                    userId: user.$id,
                 })
             })
 
@@ -97,6 +95,25 @@ const CreateTrip = ({ loaderData }: Route.ComponentProps ) => {
     };
 
     const handleChange = (key: keyof TripFormData, value: string | number)  => {
+        if(
+            !formData.country ||
+            !formData.travelStyle ||
+            !formData.interest ||
+            !formData.budget ||
+            !formData.groupType
+        ) {
+            setError('Please provide values for all fields');
+        } else {
+            setError('');
+        }
+
+        if(formData.duration < 1 || formData.duration > 10) {
+            setError('Duration must be between 1 and 10 days');
+        }
+        else {
+            setError('');
+        }
+
         setFormData({ ...formData, [key]: value})
     }
     const countryData = countries.map((country) => ({
