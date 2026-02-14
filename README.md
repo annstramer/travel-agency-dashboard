@@ -12,10 +12,12 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue)](https://www.typescriptlang.org/docs/)
 
 A role-based administrative dashboard for managing travel bookings and destinations, featuring authenticated routing, protected data access, and AI-powered image generation using Unsplash and AI-powered trip generation using Gemini.
+
 Status: Development build. Not publicly deployed due to production-level backend authorization and database hardening requirements.
 
 ## Overview
 This project simulates an internal travel agency management system designed for authenticated administrative users. The dashboard enables structured management of travel destinations and bookings while integrating AI-generated imagery to dynamically enhance destination content.
+
 The primary objective of the build was architectural: to explore authenticated application flow, role-gated routing, structured dashboard composition, and safe integration of third-party AI services within a controlled application environment.
 
 ## Core Features
