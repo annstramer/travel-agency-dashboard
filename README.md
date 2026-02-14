@@ -1,9 +1,9 @@
 # Travel Agency Admin Dashboard with AI Image Generation
 
-[![Next.js](https://img.shields.io/badge/Next.js-ES6-brightgreen)](https://nextjs.org/docs)
-[![React Router](https://img.shields.io/badge/React-ES6-brightgreen)](https://reactrouter.com/start/framework/routing)
-[![Node.js](https://img.shields.io/badge/Node.js-ES6-brightgreen)](https://nodejs.org/docs/latest/api/)
-[![Vite](https://img.shields.io/badge/Vite-ES6-brightgreen)](https://vite.dev/guide/)
+[![Next.js](https://img.shields.io/badge/Next.js-brightgreen)](https://nextjs.org/docs)
+[![React Router](https://img.shields.io/badge/React-brightgreen)](https://reactrouter.com/start/framework/routing)
+[![Node.js](https://img.shields.io/badge/Node.js-brightgreen)](https://nodejs.org/docs/latest/api/)
+[![Vite](https://img.shields.io/badge/Vite-brightgreen)](https://vite.dev/guide/)
 [![Gemini API](https://img.shields.io/badge/API-Gemini-lightblue)](https://ai.google.dev/gemini-api/docs)
 [![Unsplash API](https://img.shields.io/badge/API-Unsplash-lightblue)](https://unsplash.com/documentation)
 [![Appwrite API](https://img.shields.io/badge/API-Appwrite-purple)](https://appwrite.io/docs/references/cloud/client-web/databases)
